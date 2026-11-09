@@ -1,13 +1,14 @@
 {
   "expo": {
-    "name": "daily-talk",
+    "name": "Daily Talk",
     "slug": "daily-talk",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hye0.dailytalk"
     },
     "android": {
       "adaptiveIcon": {
@@ -16,10 +17,26 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.hye0.dailytalk"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "영어 말하기 연습을 위해 마이크를 사용합니다.",
+          "speechRecognitionPermission": "말한 영어를 텍스트로 바꾸기 위해 음성 인식을 사용합니다.",
+          "androidSpeechServicePackages": [
+            "com.google.android.googlequicksearchbox"
+          ]
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "scheme": "dailytalk"
   }
 }
