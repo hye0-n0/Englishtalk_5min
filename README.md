@@ -50,3 +50,6 @@ src/lib/topics.ts        주제 목록
 
 ## 주의
 개인용으로 쓰도록 API 키를 앱에서 바로 사용합니다. 다른 사람에게 배포하려면 키를 서버에 두고 앱은 그 서버를 거쳐 호출하도록 바꿔야 합니다.
+=======
+# Englishtalk_5min
+English conversation in 5 min a day
